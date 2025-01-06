@@ -309,47 +309,84 @@ img {
 
 /* FOOTER */
 footer {
-    padding-top: 120px;
+    color: rgba(255, 255, 255, 0.7);
 }
 
-.footer-top {
-    padding-bottom: 40px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+#footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+#footer-top .footer-info {
+    flex: 1 1 15%; 
+    max-width: 13%;
+    text-align: left;
+}
+#footer-top .footer-img {
+    flex: 1 1 15%; 
+    max-width: 20%;
+    margin-right: 5%;
 }
 
 .footer-bottom {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 20px 0;
 }
 
+.footer-logo {
+    width: 100%;
+    max-width: 200px;
+}
 
-footer li,
-footer p,
-footer a {
-    color: rgba(255,255,255,0.7);
+footer h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 footer ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
-footer .line {
-    width: 40px;
-    height: 4px;
-    background-color: var(--c-brand);
-    margin-top: 12px;
-    margin-bottom: 24px;
+footer ul li {
+    margin: 0.5rem 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: var(--c-brand);
+}
+
+.footer-bottom .col-auto {
+    font-size: 0.9rem;
+}
+.footer-bot{
+    margin: -50px -30px 0px -30px;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .social-icons a {
-    width: 40px;
-    height: 40px;
-    display: inline-flex;
+    aspect-ratio: 1/1;
+    display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255,255,255,0.1);
-    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s;
 }
 
 .social-icons a:hover {
@@ -357,3 +394,46 @@ footer .line {
     color: white;
 }
 
+.responsive-col {
+    flex-basis: 15%;
+    max-width: 15%; 
+}
+
+@media (max-width: 768px) {
+    #footer-top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0px;
+    }
+    .responsive-col {
+        flex-basis: 100%; 
+        max-width: 100%;
+    }
+    .social-icons a {
+        aspect-ratio: 1/1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        height: 30%;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        font-size: 200%;
+        color: rgba(255, 255, 255, 0.7);
+        transition: all 0.3s;
+    }
+    .col-lg-3{  
+        width: 28%;
+    }
+    #footer-top {
+        justify-content: left; /* Căn giữa các cột khi ở mobile */
+    }
+    #footer-top .footer-info {
+        padding: 0 0 0 0;
+        flex: 1 1 22%; /* Mỗi cột chiếm toàn bộ chiều ngang */
+        max-width: 30%; /* Đảm bảo không vượt quá 100% */
+        margin-bottom: 20px; /* Thêm khoảng cách giữa các hàng */
+        text-wrap: nowrap;
+    }
+}
