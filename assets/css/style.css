@@ -1,7 +1,7 @@
 :root {
     --c-dark: #212529;
     --c-brand: #20ace2;
-    --c-brand-light: #ffffff;
+    --c-brand-light: #2bb9f2;
     --c-brand-dark: #196b8c;
     --c-white-rgb: 255, 255, 255;
     --c-brand-rgb: 32, 172, 226;
@@ -17,6 +17,40 @@ body {
     line-height: 1.7;
     color: var(--c-body);
 }
+
+/* float button */
+a.fb-message-blue {
+    text-decoration: none;
+    color: #fff;
+    background-color: #0084ff;
+    border: 1px solid #0084ff;
+    width: 3rem;
+    height: 3rem;
+    line-height: 100%;
+    position: fixed;
+    border-radius: 500px;
+    -webkit-transition: all ease .15s;
+    -o-transition: all ease .15s;
+    -moz-transition: all ease .15s;
+    transition: all ease .15s;
+    text-align: center;
+    align-content: center;
+    font-size: 200%;
+}
+a.fb-message-blue:hover {
+    color: #fff;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+    transform: scale(1.15);
+}
+a.fb-message-blue:focus {
+    color: #fff;
+    -webkit-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.3);
+    box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.3);
+}
+/* .. */
 
 h1, h2, h3,h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
