@@ -16,6 +16,7 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     line-height: 1.7;
     color: var(--c-body);
+    box-sizing: border-box;
 }
 
 /* float button */
@@ -51,6 +52,7 @@ a.fb-message-blue:focus {
     box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.3);
 }
 /* .. */
+
 
 h1, h2, h3,h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
