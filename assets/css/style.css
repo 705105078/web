@@ -324,7 +324,6 @@ footer {
     text-align: left;
 }
 #footer-top .footer-img {
-    flex: 1 1 15%; 
     max-width: 20%;
     margin-right: 5%;
 }
@@ -429,11 +428,21 @@ footer ul li a:hover {
     #footer-top {
         justify-content: left; /* Căn giữa các cột khi ở mobile */
     }
+    #footer-top .footer-img {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 20%;
+        margin-right: 0;
+    }
     #footer-top .footer-info {
         padding: 0 0 0 0;
-        flex: 1 1 22%; /* Mỗi cột chiếm toàn bộ chiều ngang */
-        max-width: 30%; /* Đảm bảo không vượt quá 100% */
-        margin-bottom: 20px; /* Thêm khoảng cách giữa các hàng */
+        flex: 1 1 22%; 
+        max-width: 30%;
+        padding-left: 8px;
+        margin-bottom: 20px;
         text-wrap: nowrap;
+    }
+    .footer-bot{
+        margin: 0px -10px 0px -18px;
     }
 }
